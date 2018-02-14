@@ -86,6 +86,7 @@ add_boot_start(){
 	if [ "y" = "$is_ok" ];then
 		gedit /etc/rc.local 
 	fi
+	chmod +x /etc/rc.local 
 }
 add_host(){
 	echo "127.0.0.1	note.amolnk.top" >> /etc/hosts
@@ -122,7 +123,11 @@ replace_file
 
 add_boot_start
 add_host
-
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
 echo "the install is end"
 echo "you can use \"$i_folder/leanote-server/bin/run.sh\" to start leanote-server"
 echo "you can open http://note.amolnk.top:3356/ for your chrome to use leanote"
